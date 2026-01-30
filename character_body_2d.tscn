@@ -1,7 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://dw7fkbl4uuwyx"]
+[gd_scene load_steps=24 format=3 uid="uid://dw7fkbl4uuwyx"]
 
 [ext_resource type="Script" uid="uid://uen4rklj83ac" path="res://playerr.gd" id="1_ij6vw"]
 [ext_resource type="Texture2D" uid="uid://fvw143k3pqi4" path="res://assets/char/cute mushroom idle.png" id="2_ij6vw"]
+[ext_resource type="Texture2D" uid="uid://bdjp3iedjsrr1" path="res://assets/char/cute mushroom walk (1).png" id="3_44cfe"]
 [ext_resource type="Texture2D" uid="uid://cvq4fwb37assk" path="res://assets/char/jongkokAneh.png" id="3_ghijl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ghijl"]
@@ -39,6 +40,22 @@ region = Rect2(336, 0, 48, 48)
 [sub_resource type="AtlasTexture" id="AtlasTexture_qnedo"]
 atlas = ExtResource("2_ij6vw")
 region = Rect2(384, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_au0nh"]
+atlas = ExtResource("3_44cfe")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76bt2"]
+atlas = ExtResource("3_44cfe")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxias"]
+atlas = ExtResource("3_44cfe")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ucfvk"]
+atlas = ExtResource("3_44cfe")
+region = Rect2(144, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wyqjk"]
 atlas = ExtResource("3_ghijl")
@@ -92,6 +109,23 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_au0nh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76bt2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxias")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ucfvk")
+}],
+"loop": true,
+"name": &"jalan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_wyqjk")
 }, {
 "duration": 1.0,
@@ -117,7 +151,7 @@ script = ExtResource("1_ij6vw")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -20)
 sprite_frames = SubResource("SpriteFrames_186t8")
-animation = &"jongkok"
+animation = &"jalan"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
