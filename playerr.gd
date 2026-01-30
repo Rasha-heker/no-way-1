@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 130.0
+const LAJU = 130.0
 const JUMP_VELOCUTY = -300.0
 const LIAT_ARAH = 60.0
 
@@ -20,7 +20,7 @@ func _physics_process(delta):
 
 	#jalan
 	if direction != 0:
-		velocity.x = direction * SPEED
+		velocity.x = direction * LAJU
 
 		#karakter arah kanan kiri
 		sprite.flip_h = direction < 0

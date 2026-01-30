@@ -1,8 +1,15 @@
-[gd_scene load_steps=7 format=4 uid="uid://cff1vkmpboeq6"]
+[gd_scene load_steps=14 format=4 uid="uid://cff1vkmpboeq6"]
 
+[ext_resource type="Texture2D" uid="uid://dqoqc3qi6sj4r" path="res://assets/Background/Layer_0006_4.png" id="1_58igv"]
+[ext_resource type="Texture2D" uid="uid://dr8qjj6k464gq" path="res://assets/Background/Layer_0009_2.png" id="1_c8c3f"]
 [ext_resource type="PackedScene" uid="uid://dw7fkbl4uuwyx" path="res://character_body_2d.tscn" id="1_k2aq1"]
 [ext_resource type="Texture2D" uid="uid://h0ur8lnuf6w5" path="res://assets/tileset/GrassDirt.png" id="2_pskrv"]
+[ext_resource type="Texture2D" uid="uid://diimrpk6mhouc" path="res://assets/Background/Layer_0005_5.png" id="2_pusve"]
+[ext_resource type="Texture2D" uid="uid://fydgiwvcl8q3" path="res://assets/Background/Layer_0008_3.png" id="2_vhwld"]
 [ext_resource type="Texture2D" uid="uid://bdy52o2vrkpk8" path="res://assets/tileset/Lantai (1).png" id="3_58igv"]
+[ext_resource type="Texture2D" uid="uid://dvvrgrmrua1wu" path="res://assets/Background/Layer_0003_6.png" id="5_83vju"]
+[ext_resource type="Texture2D" uid="uid://dulmk56wxvbrx" path="res://assets/Background/Layer_0007_Lights.png" id="6_824mg"]
+[ext_resource type="Texture2D" uid="uid://borxyaocq7x5s" path="res://assets/Background/Layer_0002_7.png" id="7_ies6u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
 texture = ExtResource("2_pskrv")
@@ -124,12 +131,48 @@ sources/3 = SubResource("TileSetAtlasSource_1bvp3")
 [node name="NO WAY" type="Node2D"]
 position = Vector2(13, 5)
 
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(563, -349)
+scale = Vector2(1.237069, 1)
+texture = ExtResource("1_c8c3f")
+
+[node name="Layer00083" type="Sprite2D" parent="background"]
+position = Vector2(4.8501587, 63)
+scale = Vector2(1.0052265, 1)
+texture = ExtResource("2_vhwld")
+
+[node name="Layer00064" type="Sprite2D" parent="background"]
+position = Vector2(-9.700348, 64)
+scale = Vector2(1.031359, 1)
+texture = ExtResource("1_58igv")
+
+[node name="Layer00055" type="Sprite2D" parent="background"]
+position = Vector2(-17.783936, 64)
+scale = Vector2(1.0426828, 1)
+texture = ExtResource("2_pusve")
+
+[node name="Layer00036" type="Sprite2D" parent="background"]
+position = Vector2(-1.6166687, 64)
+scale = Vector2(1.067627, 1)
+texture = ExtResource("5_83vju")
+offset = Vector2(3.78, 0)
+
+[node name="Layer0007Lights" type="Sprite2D" parent="background"]
+position = Vector2(-4.041809, 59)
+scale = Vector2(0.80836236, 1)
+texture = ExtResource("6_824mg")
+
+[node name="Layer00027" type="Sprite2D" parent="background"]
+position = Vector2(0.8083496, 68)
+scale = Vector2(1.0818815, 1)
+texture = ExtResource("7_ies6u")
+
 [node name="Player" parent="." instance=ExtResource("1_k2aq1")]
 position = Vector2(35, 45)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(0, -47.585)
-zoom = Vector2(2.445, 2.445)
+position = Vector2(0, -86.765)
+zoom = Vector2(1.645, 1.645)
 
 [node name="Layer" type="TileMap" parent="."]
 position = Vector2(102, 47)
