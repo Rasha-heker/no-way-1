@@ -13,32 +13,35 @@ func _physics_process(delta):
 		velocity += get_gravity() * delta
 
 	var direction := Input.get_axis("ui_left", "ui_right")
-
-	#ompat
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	
+	# Lompat
+	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocity.y = JUMP_VELOCUTY
+		sprite.play("lompat")
 
 	#jalan
 	if direction != 0:
 		velocity.x = direction * LAJU
-
-		#karakter arah kanan kiri
 		sprite.flip_h = direction < 0
-
-		#kamerak ngikut karakter
 		cam.offset.x = lerp(cam.offset.x, LIAT_ARAH * direction, 0.1)
-
-		# Animasi jalan
-		if sprite.animation != "jalan":
-			sprite.play("jalan")
 	else:
 		velocity.x = 0
-
-		# Kamera balik ke tengah
 		cam.offset.x = lerp(cam.offset.x, 0.0, 0.1)
-
-		# Animasi diam
-		if sprite.animation != "idle":
-			sprite.play("idle")
+		
+	#PERANIMASIAN AH
+	if not is_on_floor():
+		if velocity.y < 0:
+			if sprite.animation != "lompat":
+				sprite.play("lompat") # saat lompat
+		else:
+			if sprite.animation != "diudara":
+				sprite.play("diudara") # saat jatuh
+	else:
+		if direction != 0:
+			if sprite.animation != "jalan":
+				sprite.play("jalan") #animasi jalan
+		else:
+			if sprite.animation != "idle":
+				sprite.play("idle") #animasi diammmm
 
 	move_and_slide()
