@@ -108,7 +108,7 @@ sources/0 = SubResource("TileSetAtlasSource_h2yge")
 position = Vector2(13, 5)
 
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(106, 66)
+position = Vector2(36, 78)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(96, -68)
@@ -118,6 +118,7 @@ zoom = Vector2(2, 2)
 position = Vector2(102, 47)
 tile_set = SubResource("TileSet_1bvp3")
 format = 2
+layer_0/tile_data = PackedInt32Array(-1, 65536, 2, -2, 65536, 2, -3, 65536, 2)
 
 [node name="Tanah" type="TileMapLayer" parent="Layer"]
 use_parent_material = true
