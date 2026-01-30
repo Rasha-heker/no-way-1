@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgp00nrt75xn3"
-path="res://.godot/imported/Layer_0011_0.png-7256de91d9b89a215309a275d69ac71d.ctex"
+uid="uid://b71g8abnvtbft"
+path="res://.godot/imported/far-grounds.png-ffa9e57be62904b67457d5f84874c3b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Background/Layer_0011_0.png"
-dest_files=["res://.godot/imported/Layer_0011_0.png-7256de91d9b89a215309a275d69ac71d.ctex"]
+source_file="res://assets/Background/far-grounds.png"
+dest_files=["res://.godot/imported/far-grounds.png-ffa9e57be62904b67457d5f84874c3b6.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dndt1nsggjb5l"
-path="res://.godot/imported/Layer_0010_1.png-62f4bc180603e14070c495128e601e31.ctex"
+uid="uid://d3u2kxhb2i1iu"
+path="res://.godot/imported/Lantainddirt.png-0d30a59ac620537f7896b24576a792a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Background/Layer_0010_1.png"
-dest_files=["res://.godot/imported/Layer_0010_1.png-62f4bc180603e14070c495128e601e31.ctex"]
+source_file="res://assets/tileset/Lantainddirt.png"
+dest_files=["res://.godot/imported/Lantainddirt.png-0d30a59ac620537f7896b24576a792a5.ctex"]
 
 [params]
 
