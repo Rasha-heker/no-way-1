@@ -1,9 +1,9 @@
 [gd_scene load_steps=22 format=3 uid="uid://dw7fkbl4uuwyx"]
 
 [ext_resource type="Script" uid="uid://uen4rklj83ac" path="res://playerr.gd" id="1_ij6vw"]
-[ext_resource type="Texture2D" uid="uid://dnbr670agesv7" path="res://assets/char/Jamur Lompat.png" id="2_44cfe"]
-[ext_resource type="Texture2D" uid="uid://fvw143k3pqi4" path="res://assets/char/cute mushroom idle.png" id="2_ij6vw"]
-[ext_resource type="Texture2D" uid="uid://bdjp3iedjsrr1" path="res://assets/char/cute mushroom walk (1).png" id="3_44cfe"]
+[ext_resource type="Texture2D" uid="uid://dnbr670agesv7" path="res://assets/char/Player/Jamur Lompat.png" id="2_44cfe"]
+[ext_resource type="Texture2D" uid="uid://fvw143k3pqi4" path="res://assets/char/Player/cute mushroom idle.png" id="2_ij6vw"]
+[ext_resource type="Texture2D" uid="uid://bdjp3iedjsrr1" path="res://assets/char/Player/cute mushroom walk (1).png" id="3_44cfe"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wyqjk"]
 atlas = ExtResource("2_44cfe")

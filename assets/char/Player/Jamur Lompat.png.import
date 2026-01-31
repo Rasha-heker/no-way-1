@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnbr670agesv7"
-path="res://.godot/imported/Jamur Lompat.png-0efee0affaa3141f7625c8ffa25382d9.ctex"
+path="res://.godot/imported/Jamur Lompat.png-3e4f8139d68ab69491abed49a9f6035c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/char/Jamur Lompat.png"
-dest_files=["res://.godot/imported/Jamur Lompat.png-0efee0affaa3141f7625c8ffa25382d9.ctex"]
+source_file="res://assets/char/Player/Jamur Lompat.png"
+dest_files=["res://.godot/imported/Jamur Lompat.png-3e4f8139d68ab69491abed49a9f6035c.ctex"]
 
 [params]
 

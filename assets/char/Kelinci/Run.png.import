@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvq4fwb37assk"
-path="res://.godot/imported/jongkokAneh.png-d1294ac143694bf64a6afe3da8d6dfd1.ctex"
+uid="uid://bj5d2lcf7vp4b"
+path="res://.godot/imported/Run.png-d119ba0539cd96803250b59bb048548d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/char/jongkokAneh.png"
-dest_files=["res://.godot/imported/jongkokAneh.png-d1294ac143694bf64a6afe3da8d6dfd1.ctex"]
+source_file="res://assets/char/Kelinci/Run.png"
+dest_files=["res://.godot/imported/Run.png-d119ba0539cd96803250b59bb048548d.ctex"]
 
 [params]
 
