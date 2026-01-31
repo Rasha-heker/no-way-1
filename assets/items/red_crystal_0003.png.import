@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bak6lj3wqb55y"
-path="res://.godot/imported/Layer02.png-fe1d1f6019ea91f4a2edcfa7e6b14189.ctex"
+uid="uid://8242yj523lwk"
+path="res://.godot/imported/red_crystal_0003.png-c7356f1173ec9a408d6e15b4d9d98781.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tileset/Layer02.png"
-dest_files=["res://.godot/imported/Layer02.png-fe1d1f6019ea91f4a2edcfa7e6b14189.ctex"]
+source_file="res://assets/items/red_crystal_0003.png"
+dest_files=["res://.godot/imported/red_crystal_0003.png-c7356f1173ec9a408d6e15b4d9d98781.ctex"]
 
 [params]
 

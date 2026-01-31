@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdy52o2vrkpk8"
-path="res://.godot/imported/Lantai (1).png-efe23801387a6b86e7b064c6871da10b.ctex"
+uid="uid://c2x8f5ya46b6t"
+path="res://.godot/imported/red_crystal_0002.png-f19640d4ffa64707cab8404eef5e9bb9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tileset/Lantai (1).png"
-dest_files=["res://.godot/imported/Lantai (1).png-efe23801387a6b86e7b064c6871da10b.ctex"]
+source_file="res://assets/items/red_crystal_0002.png"
+dest_files=["res://.godot/imported/red_crystal_0002.png-f19640d4ffa64707cab8404eef5e9bb9.ctex"]
 
 [params]
 
