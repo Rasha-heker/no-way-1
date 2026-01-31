@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fvw143k3pqi4"
-path="res://.godot/imported/cute mushroom idle.png-3ab2bdb16aa5167453f22d64b4b1408e.ctex"
+uid="uid://tiqxl45o7ccm"
+path="res://.godot/imported/red_crystal_0000.png-41e0f4a298073c7a913c94f9ab760ab3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/char/cute mushroom idle.png"
-dest_files=["res://.godot/imported/cute mushroom idle.png-3ab2bdb16aa5167453f22d64b4b1408e.ctex"]
+source_file="res://assets/items/red_crystal_0000.png"
+dest_files=["res://.godot/imported/red_crystal_0000.png-41e0f4a298073c7a913c94f9ab760ab3.ctex"]
 
 [params]
 

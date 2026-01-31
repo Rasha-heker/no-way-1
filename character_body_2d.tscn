@@ -1,9 +1,16 @@
 [gd_scene load_steps=22 format=3 uid="uid://dw7fkbl4uuwyx"]
 
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://uen4rklj83ac" path="res://playerr.gd" id="1_ij6vw"]
 [ext_resource type="Texture2D" uid="uid://dnbr670agesv7" path="res://assets/char/Player/Jamur Lompat.png" id="2_44cfe"]
 [ext_resource type="Texture2D" uid="uid://fvw143k3pqi4" path="res://assets/char/Player/cute mushroom idle.png" id="2_ij6vw"]
 [ext_resource type="Texture2D" uid="uid://bdjp3iedjsrr1" path="res://assets/char/Player/cute mushroom walk (1).png" id="3_44cfe"]
+=======
+[ext_resource type="Script" uid="uid://usglg52x73aj" path="res://playerr.gd" id="1_ij6vw"]
+[ext_resource type="Texture2D" uid="uid://dnbr670agesv7" path="res://assets/char/Jamur Lompat.png" id="2_44cfe"]
+[ext_resource type="Texture2D" uid="uid://fvw143k3pqi4" path="res://assets/char/cute mushroom idle.png" id="2_ij6vw"]
+[ext_resource type="Texture2D" uid="uid://bdjp3iedjsrr1" path="res://assets/char/cute mushroom walk (1).png" id="3_44cfe"]
+>>>>>>> 28f5fd073a7d0b1c628a98087c1fb6b77cbc71c4
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wyqjk"]
 atlas = ExtResource("2_44cfe")
@@ -137,6 +144,7 @@ animations = [{
 size = Vector2(15, 21.705427)
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
 script = ExtResource("1_ij6vw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
