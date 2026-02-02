@@ -41,7 +41,7 @@ func _physics_process(delta):
 			if sprite.animation != "jalan":
 				sprite.play("jalan") #animasi jalan
 		else:
-			if sprite.animation != "idle":
-				sprite.play("idle") #animasi diammmm
+			if sprite.animation != "diam":
+				sprite.play("diam") #animasi diammmm
 
 	move_and_slide()

@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cescgu8b5ee5a"]
+
+[ext_resource type="Script" uid="uid://b081rqrpqpq8" path="res://Script/dialog_npc.gd" id="1_50y28"]
+
+[node name="Dialog npc" type="CanvasLayer"]
+visible = false
+script = ExtResource("1_50y28")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Ribbit Ribbit??"
