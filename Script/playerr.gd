@@ -6,6 +6,7 @@ const LIAT_ARAH = 60.0
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var cam: Camera2D = $Camera2D
+@onready var sfx_lompat: AudioStreamPlayer2D = $sfx_lompat
 
 func _physics_process(delta):
 	#garpitasi
@@ -18,6 +19,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocity.y = JUMP_VELOCUTY
 		sprite.play("lompat")
+		sfx_lompat.play()
 
 	#jalan
 	if direction != 0:
@@ -26,7 +28,6 @@ func _physics_process(delta):
 		cam.offset.x = lerp(cam.offset.x, LIAT_ARAH * direction, 0.1)
 	else:
 		velocity.x = 0
-		cam.offset.x = lerp(cam.offset.x, 0.0, 0.1)
 		
 	#PERANIMASIAN AH
 	if not is_on_floor():
@@ -45,3 +46,5 @@ func _physics_process(delta):
 				sprite.play("diam") #animasi diammmm
 
 	move_and_slide()
+	
+	
