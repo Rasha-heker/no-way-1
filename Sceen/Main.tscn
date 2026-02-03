@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://b56oq08gq0tky"]
+[gd_scene load_steps=20 format=3 uid="uid://b56oq08gq0tky"]
 
 [ext_resource type="PackedScene" uid="uid://bu3lcrmm5cjd1" path="res://Sceen/Player.tscn" id="3_uk106"]
 [ext_resource type="Texture2D" uid="uid://bdy52o2vrkpk8" path="res://assets/tileset/Lantai (1).png" id="3_wgpgn"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://nf471ncm3ghp" path="res://assets/Background/clouds.png" id="9_nufx6"]
 [ext_resource type="PackedScene" uid="uid://cwikpd5nod1l0" path="res://Sceen/crystal.tscn" id="10_kooi2"]
 [ext_resource type="PackedScene" uid="uid://dsearpfqrwwhi" path="res://Sceen/killzone.tscn" id="11_ud1a7"]
+[ext_resource type="PackedScene" uid="uid://b7vy6ujg0pa57" path="res://Sceen/npc.tscn" id="12_nufx6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r0du0"]
 texture = ExtResource("3_wgpgn")
@@ -371,6 +372,8 @@ distance = -107.0
 
 [node name="Player" parent="." instance=ExtResource("3_uk106")]
 position = Vector2(90, 170)
+collision_layer = 2
+collision_mask = 1
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(3.085, 3.085)
@@ -491,3 +494,7 @@ position = Vector2(1, 260)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
 position = Vector2(94, 18)
 shape = SubResource("WorldBoundaryShape2D_nufx6")
+
+[node name="npc" parent="." instance=ExtResource("12_nufx6")]
+position = Vector2(334, 189)
+collision_mask = 2
