@@ -45,3 +45,5 @@ func _physics_process(delta):
 				sprite.play("diam") #animasi diammmm
 
 	move_and_slide()
+	
+	

@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b56oq08gq0tky"]
+[gd_scene load_steps=21 format=3 uid="uid://b56oq08gq0tky"]
 
 [ext_resource type="PackedScene" uid="uid://bu3lcrmm5cjd1" path="res://Sceen/Player.tscn" id="3_uk106"]
 [ext_resource type="Texture2D" uid="uid://bdy52o2vrkpk8" path="res://assets/tileset/Lantai (1).png" id="3_wgpgn"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cwikpd5nod1l0" path="res://Sceen/crystal.tscn" id="10_kooi2"]
 [ext_resource type="PackedScene" uid="uid://dsearpfqrwwhi" path="res://Sceen/killzone.tscn" id="11_ud1a7"]
 [ext_resource type="PackedScene" uid="uid://b7vy6ujg0pa57" path="res://Sceen/npc.tscn" id="12_nufx6"]
+[ext_resource type="PackedScene" uid="uid://du6i4l7q65h22" path="res://Sceen/kelinci_god.tscn" id="13_kooi2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r0du0"]
 texture = ExtResource("3_wgpgn")
@@ -371,7 +372,7 @@ distance = -107.0
 [node name="Main" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("3_uk106")]
-position = Vector2(90, 170)
+position = Vector2(1906, 190)
 collision_layer = 2
 collision_mask = 1
 
@@ -397,96 +398,94 @@ position = Vector2(378.25, 128)
 scale = Vector2(1.2313311, 2.290909)
 texture = ExtResource("8_ud1a7")
 
-[node name="FarGrounds2" type="Sprite2D" parent="."]
+[node name="FarGrounds4" type="Sprite2D" parent="FarGrounds"]
 z_index = -1
-position = Vector2(690, 140)
-scale = Vector2(1.1136364, 1.2545455)
+position = Vector2(901.26025, -1.3095284)
+scale = Vector2(1.2234674, 0.8174603)
 texture = ExtResource("8_ud1a7")
 
-[node name="FarGrounds3" type="Sprite2D" parent="."]
+[node name="FarGrounds2" type="Sprite2D" parent="FarGrounds"]
 z_index = -1
-position = Vector2(1080.5, 128)
-scale = Vector2(1.0438312, 1.309091)
+position = Vector2(253.18127, 5.2380943)
+scale = Vector2(0.9044166, 0.54761904)
 texture = ExtResource("8_ud1a7")
 
-[node name="FarGrounds4" type="Sprite2D" parent="."]
+[node name="FarGrounds3" type="Sprite2D" parent="FarGrounds"]
 z_index = -1
-position = Vector2(1487.9999, 124.99999)
-scale = Vector2(1.5064934, 1.8727272)
+position = Vector2(570.31775, 0)
+scale = Vector2(0.8477258, 0.5714286)
 texture = ExtResource("8_ud1a7")
 
-[node name="FarGrounds5" type="Sprite2D" parent="."]
+[node name="FarGrounds5" type="Sprite2D" parent="FarGrounds"]
 z_index = -1
-position = Vector2(2075.25, 134)
-scale = Vector2(1.2199672, 2.172727)
+position = Vector2(1378.1832, 2.619049)
+scale = Vector2(0.990771, 0.94841266)
 texture = ExtResource("8_ud1a7")
 
 [node name="Clouds" type="Sprite2D" parent="."]
+visible = false
 z_index = -2
 position = Vector2(277, 126)
 texture = ExtResource("9_nufx6")
 
-[node name="Clouds2" type="Sprite2D" parent="."]
+[node name="Clouds6" type="Sprite2D" parent="Clouds"]
 z_index = -2
-position = Vector2(625, 143)
-texture = ExtResource("9_nufx6")
-
-[node name="Clouds3" type="Sprite2D" parent="."]
-z_index = -2
-position = Vector2(1045, 93.00001)
+position = Vector2(1936, -7)
 scale = Vector2(0.8731618, 0.87711865)
 texture = ExtResource("9_nufx6")
 
-[node name="Clouds4" type="Sprite2D" parent="."]
+[node name="Clouds4" type="Sprite2D" parent="Clouds"]
 z_index = -2
-position = Vector2(1438.0001, 103)
+position = Vector2(1161.0001, -23)
 scale = Vector2(0.8731618, 0.87711865)
 texture = ExtResource("9_nufx6")
 
-[node name="Clouds5" type="Sprite2D" parent="."]
+[node name="Clouds2" type="Sprite2D" parent="Clouds"]
 z_index = -2
-position = Vector2(1889, 140)
+position = Vector2(348, 17)
+texture = ExtResource("9_nufx6")
+
+[node name="Clouds3" type="Sprite2D" parent="Clouds"]
+z_index = -2
+position = Vector2(768, -32.999992)
 scale = Vector2(0.8731618, 0.87711865)
 texture = ExtResource("9_nufx6")
 
-[node name="Clouds6" type="Sprite2D" parent="."]
+[node name="Clouds5" type="Sprite2D" parent="Clouds"]
 z_index = -2
-position = Vector2(2213, 119)
+position = Vector2(1612, 14)
 scale = Vector2(0.8731618, 0.87711865)
 texture = ExtResource("9_nufx6")
-
-[node name="crystal" parent="." instance=ExtResource("10_kooi2")]
-position = Vector2(251, 185)
-
-[node name="crystal2" parent="." instance=ExtResource("10_kooi2")]
-position = Vector2(435, 188)
-
-[node name="crystal3" parent="." instance=ExtResource("10_kooi2")]
-position = Vector2(669, 166)
-
-[node name="crystal4" parent="." instance=ExtResource("10_kooi2")]
-position = Vector2(865, 167)
-
-[node name="crystal5" parent="." instance=ExtResource("10_kooi2")]
-position = Vector2(1087, 186)
-
-[node name="crystal6" parent="." instance=ExtResource("10_kooi2")]
-position = Vector2(1264, 140)
-
-[node name="crystal7" parent="." instance=ExtResource("10_kooi2")]
-position = Vector2(1541, 137)
-
-[node name="crystal8" parent="." instance=ExtResource("10_kooi2")]
-position = Vector2(1691, 140)
-
-[node name="crystal9" parent="." instance=ExtResource("10_kooi2")]
-position = Vector2(1831, 176)
 
 [node name="crystal10" parent="." instance=ExtResource("10_kooi2")]
-position = Vector2(2220, 201)
+position = Vector2(1958, 205)
 
-[node name="crystal11" parent="." instance=ExtResource("10_kooi2")]
-position = Vector2(2016, 202)
+[node name="crystal8" parent="crystal10" instance=ExtResource("10_kooi2")]
+position = Vector2(-572, -58)
+
+[node name="crystal7" parent="crystal10" instance=ExtResource("10_kooi2")]
+position = Vector2(-736, -61)
+
+[node name="crystal6" parent="crystal10" instance=ExtResource("10_kooi2")]
+position = Vector2(-901, -63)
+
+[node name="crystal5" parent="crystal10" instance=ExtResource("10_kooi2")]
+position = Vector2(-1077, -36)
+
+[node name="crystal4" parent="crystal10" instance=ExtResource("10_kooi2")]
+position = Vector2(-1300, -36)
+
+[node name="crystal3" parent="crystal10" instance=ExtResource("10_kooi2")]
+position = Vector2(-1496, -37)
+
+[node name="crystal2" parent="crystal10" instance=ExtResource("10_kooi2")]
+position = Vector2(-1697, -12)
+
+[node name="crystal" parent="crystal10" instance=ExtResource("10_kooi2")]
+position = Vector2(-1798, -78)
+
+[node name="crystal9" parent="crystal10" instance=ExtResource("10_kooi2")]
+position = Vector2(-346, -65)
 
 [node name="killzone" parent="." instance=ExtResource("11_ud1a7")]
 position = Vector2(1, 260)
@@ -498,3 +497,6 @@ shape = SubResource("WorldBoundaryShape2D_nufx6")
 [node name="npc" parent="." instance=ExtResource("12_nufx6")]
 position = Vector2(334, 189)
 collision_mask = 2
+
+[node name="kelinci god" parent="." instance=ExtResource("13_kooi2")]
+position = Vector2(2353, 208)
