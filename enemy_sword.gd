@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@export var speed := 20
+@export var speed := 40
 @export var max_hp := 3
-@export var attack_damage := 1
+@export var attack_damage := 5
 @export var attack_range := 30
 
 var hit_count := 0
@@ -15,6 +15,7 @@ var is_hurt := false
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var attack_timer: Timer = $AttackCooldown
+@onready var hit_sound: AudioStreamPlayer2D = $HitSound
 
 func _ready():
 	hp = max_hp
@@ -29,6 +30,9 @@ func _on_detection_area_body_entered(body: Node2D) -> void:
 func _physics_process(delta):
 	if is_dead:
 		return
+		
+	if not is_on_floor():
+		velocity += get_gravity() * delta
 		
 	if player and not is_hurt:
 		var distance = global_position.distance_to(player.global_position)
@@ -81,6 +85,9 @@ func take_damage(amount):
 	hp -= amount
 	is_hurt = true
 	sprite.play("hit")
+	
+	if hit_sound:
+		hit_sound.play()
 
 	$HurtTimer.stop()
 	$HurtTimer.start()

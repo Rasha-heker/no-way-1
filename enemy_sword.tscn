@@ -1,7 +1,8 @@
-[gd_scene load_steps=43 format=3 uid="uid://ccosq3vtws2t"]
+[gd_scene load_steps=44 format=3 uid="uid://ccosq3vtws2t"]
 
 [ext_resource type="Texture2D" uid="uid://c1cdrsg72sr5c" path="res://assets/char/Sword_spritesheet.png" id="1_gqwtb"]
 [ext_resource type="Script" uid="uid://ba8k6alx3r2ik" path="res://enemy_sword.gd" id="1_prkt5"]
+[ext_resource type="AudioStream" uid="uid://dfgqq344fx3ag" path="res://assets/tileset/slap-hurt-pain-sound-effect-262618.mp3" id="3_ijb6r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_prkt5"]
 atlas = ExtResource("1_gqwtb")
@@ -291,17 +292,16 @@ radius = 139.0899
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_prkt5"]
 radius = 8.0
-height = 56.0
+height = 58.0
 
 [node name="Enemy Sword" type="CharacterBody2D" groups=["enemy"]]
+collision_layer = 2
 script = ExtResource("1_prkt5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_m3mpk")
 animation = &"attack"
 autoplay = "idle"
-frame = 13
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 5.5)
@@ -326,6 +326,10 @@ one_shot = true
 [node name="HurtTimer" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
+
+[node name="HitSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ijb6r")
+max_distance = 300.0
 
 [connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]
 [connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
