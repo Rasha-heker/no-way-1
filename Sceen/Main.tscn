@@ -373,10 +373,9 @@ distance = -107.0
 
 [node name="Player" parent="." instance=ExtResource("3_uk106")]
 position = Vector2(1906, 190)
-collision_layer = 2
-collision_mask = 1
+collision_mask = 255
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
+[node name="Camera2D2" type="Camera2D" parent="Player"]
 zoom = Vector2(3.085, 3.085)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -497,6 +496,7 @@ shape = SubResource("WorldBoundaryShape2D_nufx6")
 [node name="npc" parent="." instance=ExtResource("12_nufx6")]
 position = Vector2(334, 189)
 collision_mask = 2
+script = null
 
 [node name="kelinci god" parent="." instance=ExtResource("13_kooi2")]
 position = Vector2(2353, 208)
