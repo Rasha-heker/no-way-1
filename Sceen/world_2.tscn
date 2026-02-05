@@ -1,0 +1,117 @@
+[gd_scene load_steps=11 format=4 uid="uid://dipgyxv58tdea"]
+
+[ext_resource type="PackedScene" uid="uid://d1ht8dvobk057" path="res://Sceen/wammbi.tscn" id="1_2ehvv"]
+[ext_resource type="Texture2D" uid="uid://c1jf0swmxq8vo" path="res://assets/Background/NightForest/Image without mist.png" id="2_dr61x"]
+[ext_resource type="Texture2D" uid="uid://dfnhhqb83ahyn" path="res://assets/Background/NightForest/Layers/2.png" id="3_ruewt"]
+[ext_resource type="Texture2D" uid="uid://co6k1cmwvydt1" path="res://assets/Background/NightForest/Layers/3.png" id="4_tmqw7"]
+[ext_resource type="Texture2D" uid="uid://cehmi11t36wfm" path="res://assets/Background/NightForest/Layers/4.png" id="5_asot3"]
+[ext_resource type="Texture2D" uid="uid://bxy4mttx7d15o" path="res://assets/Background/NightForest/Layers/5.png" id="6_h4y5b"]
+[ext_resource type="Texture2D" uid="uid://b8h8begaesfop" path="res://assets/Background/NightForest/Layers/6.png" id="7_f7fg2"]
+[ext_resource type="Texture2D" uid="uid://b3io7gmumcjpo" path="res://assets/tileset/lantai(polos).png" id="8_lnguc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7ku2f"]
+texture = ExtResource("8_lnguc")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_hr2xv"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_7ku2f")
+
+[node name="world2" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_2ehvv")]
+z_index = 5
+position = Vector2(45, -39)
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -4
+position = Vector2(1009, -29)
+scale = Vector2(3.244355, 2.0222223)
+texture = ExtResource("2_dr61x")
+
+[node name="2" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(0.77059937, -3.2142859)
+scale = Vector2(1.0037286, 1.0068681)
+texture = ExtResource("3_ruewt")
+
+[node name="3" type="Sprite2D" parent="Background"]
+position = Vector2(150.10687, -97.91209)
+scale = Vector2(0.3082277, 0.4945055)
+texture = ExtResource("4_tmqw7")
+
+[node name="4" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(0.9246826, -1.730773)
+scale = Vector2(1.0062143, 1.0288461)
+texture = ExtResource("5_asot3")
+
+[node name="5" type="Sprite2D" parent="Background"]
+position = Vector2(-212.06065, -117.19781)
+scale = Vector2(0.3082277, 0.4945055)
+texture = ExtResource("6_h4y5b")
+
+[node name="7" type="Sprite2D" parent="Background"]
+position = Vector2(-37.60379, -84.56044)
+scale = Vector2(0.3082277, 0.4945055)
+texture = ExtResource("6_h4y5b")
+
+[node name="8" type="Sprite2D" parent="Background"]
+position = Vector2(124.21576, -113.73626)
+scale = Vector2(0.3082277, 0.4945055)
+texture = ExtResource("6_h4y5b")
+
+[node name="9" type="Sprite2D" parent="Background"]
+position = Vector2(216.68405, 14.340659)
+scale = Vector2(0.3082277, 0.4945055)
+texture = ExtResource("6_h4y5b")
+
+[node name="10" type="Sprite2D" parent="Background"]
+position = Vector2(79.522736, 55.384617)
+scale = Vector2(0.3082277, 0.4945055)
+texture = ExtResource("6_h4y5b")
+
+[node name="11" type="Sprite2D" parent="Background"]
+position = Vector2(-67.193634, 14.340659)
+scale = Vector2(0.3082277, 0.4945055)
+texture = ExtResource("6_h4y5b")
+
+[node name="12" type="Sprite2D" parent="Background"]
+position = Vector2(-226.85559, -4.450549)
+scale = Vector2(0.3082277, 0.4945055)
+texture = ExtResource("6_h4y5b")
+
+[node name="13" type="Sprite2D" parent="Background"]
+position = Vector2(223.15683, -105.329666)
+scale = Vector2(0.3082277, 0.4945055)
+texture = ExtResource("6_h4y5b")
+
+[node name="6" type="Sprite2D" parent="Background"]
+z_index = -1
+position = Vector2(0.15411377, 33.131866)
+scale = Vector2(0.99975145, 0.5137363)
+texture = ExtResource("7_f7fg2")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_hr2xv")
+format = 2
+
+[node name="Layer1" type="TileMapLayer" parent="TileMap"]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAAAAAIAAAAAAAEAAAABAAIAAAAAAAEAAAACAAIAAAAAAAEAAAADAAIAAAAAAAEAAAAEAAIAAAAAAAEAAAAFAAIAAAAAAAEAAAAGAAIAAAAAAAEAAAAHAAIAAAAAAAEAAAAIAAIAAAAAAAEAAAAJAAIAAAAAAAEAAAAKAAIAAAAAAAEAAAALAAIAAAAAAAEAAAAMAAIAAAAAAAEAAAANAAIAAAAAAAEAAAAOAAIAAAAAAAEAAAAPAAIAAAAAAAEAAAAQAAIAAAAAAAEAAAARAAIAAAAAAAEAAAASAAIAAAAAAAEAAAATAAIAAAAAAAEAAAAUAAIAAAAAAAEAAAAVAAIAAAAAAAEAAAAWAAIAAAAAAAEAAAAXAAIAAAAAAAEAAAAYAAIAAAAAAAEAAAAZAAIAAAAAAAEAAAAaAAIAAAAAAAEAAAAbAAIAAAAAAAEAAAAcAAIAAAAAAAEAAAAeAAIAAAAAAAEAAAAfAAIAAAAAAAEAAAAgAAIAAAAAAAEAAAAhAAIAAAAAAAEAAAAiAAIAAAAAAAEAAAAdAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAALAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAANAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAPAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAARAAAAAAAAAAAAAAASAAAAAAAAAAAAAAATAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_hr2xv")
