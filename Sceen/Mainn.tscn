@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cy4u6bny1cgxn"]
+[gd_scene load_steps=23 format=3 uid="uid://cy4u6bny1cgxn"]
 
 [ext_resource type="PackedScene" uid="uid://bu3lcrmm5cjd1" path="res://Sceen/Player.tscn" id="3_uk106"]
 [ext_resource type="Texture2D" uid="uid://bdy52o2vrkpk8" path="res://assets/tileset/Lantai (1).png" id="3_wgpgn"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://dsearpfqrwwhi" path="res://Sceen/killzone.tscn" id="11_ud1a7"]
 [ext_resource type="PackedScene" uid="uid://wjej2sp388xx" path="res://Sceen/suara(bisikan).tscn" id="12_nufx6"]
 [ext_resource type="PackedScene" uid="uid://du6i4l7q65h22" path="res://Sceen/kelinci_god.tscn" id="13_vneob"]
+[ext_resource type="PackedScene" uid="uid://b1pv38kyw4ju7" path="res://Sceen/transisitrigger.tscn" id="14_fm3jx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r0du0"]
 texture = ExtResource("3_wgpgn")
@@ -368,6 +369,9 @@ sources/4 = SubResource("TileSetAtlasSource_u2y5r")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nufx6"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5wiqf"]
+size = Vector2(328, 181)
+
 [node name="Main" type="Node2D"]
 
 [node name="background" type="Area2D" parent="."]
@@ -477,6 +481,9 @@ position = Vector2(3162, 157)
 [node name="crystal13" parent="." instance=ExtResource("10_kooi2")]
 position = Vector2(3162, 157)
 
+[node name="crystal14" parent="." instance=ExtResource("10_kooi2")]
+position = Vector2(3422, 157)
+
 [node name="TextEdit" type="TextEdit" parent="."]
 offset_left = 396.0
 offset_top = 101.0
@@ -496,7 +503,7 @@ offset_left = 1274.0
 offset_top = 72.0
 offset_right = 1467.0
 offset_bottom = 105.0
-text = "WE need you, Wammbi."
+text = "Kill him, Wammbi."
 
 [node name="TextEdit4" type="TextEdit" parent="."]
 offset_left = 1936.0
@@ -508,16 +515,24 @@ text = "You are our savior."
 [node name="TextEdit5" type="TextEdit" parent="."]
 offset_left = 2538.0
 offset_top = 110.0
-offset_right = 2694.0
+offset_right = 2760.0
 offset_bottom = 143.0
-text = "SAVE THE WORLD."
+text = "THIS WORLD IS CORRUPTED"
 
 [node name="TextEdit6" type="TextEdit" parent="."]
-offset_left = 3178.0
-offset_top = 56.0
-offset_right = 3247.0
-offset_bottom = 89.0
-text = "KILL IT."
+offset_left = 3176.0
+offset_top = 33.0
+offset_right = 3310.0
+offset_bottom = 67.0
+text = "FIX IT. KILL HIM."
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("13_vneob")]
+[node name="kelinci-god" parent="." instance=ExtResource("13_vneob")]
 position = Vector2(3541, 157)
+
+[node name="transisitrigger" parent="." instance=ExtResource("14_fm3jx")]
+position = Vector2(3382, 112)
+connected_scene = "dunia_dua"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="transisitrigger"]
+position = Vector2(112, -25.5)
+shape = SubResource("RectangleShape2D_5wiqf")

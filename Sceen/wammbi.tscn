@@ -139,15 +139,14 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_twli2"]
 radius = 71.44928
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="wammbi" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(17, -3)
-scale = Vector2(0.6679687, 0.59375)
+position = Vector2(1, -20)
+scale = Vector2(0.3896484, 0.29166666)
 sprite_frames = SubResource("SpriteFrames_m8pi6")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.6184076
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false

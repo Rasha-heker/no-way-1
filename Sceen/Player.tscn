@@ -138,6 +138,7 @@ animations = [{
 size = Vector2(20, 29)
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 15
 script = ExtResource("1_udt3l")
 
 [node name="Camera2D" type="Camera2D" parent="."]

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1pv38kyw4ju7"]
+
+[ext_resource type="Script" uid="uid://d0dfkbjko6ik7" path="res://Script/transisitrigger.gd" id="1_2u4as"]
+
+[node name="transisitrigger" type="Area2D"]
+collision_mask = 4
+script = ExtResource("1_2u4as")
+connected_scene = null
+scene_folder = null
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
