@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://d1ht8dvobk057"]
+[gd_scene load_steps=20 format=3 uid="uid://d1ht8dvobk057"]
 
 [ext_resource type="Texture2D" uid="uid://cnoqp0t237fe3" path="res://assets/char/Wammbi/11 - attack 3.png" id="1_fxm18"]
+[ext_resource type="Texture2D" uid="uid://bxhoyywyccvhj" path="res://assets/char/Wammbi/11 - attack 3-.png" id="2_hnjh2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fxm18"]
 atlas = ExtResource("1_fxm18")
@@ -45,6 +46,22 @@ region = Rect2(640, 0, 128, 192)
 [sub_resource type="AtlasTexture" id="AtlasTexture_iij2s"]
 atlas = ExtResource("1_fxm18")
 region = Rect2(896, 0, 128, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ad6r5"]
+atlas = ExtResource("2_hnjh2")
+region = Rect2(580, 192, 116, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fnxya"]
+atlas = ExtResource("2_hnjh2")
+region = Rect2(696, 192, 116, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tuybs"]
+atlas = ExtResource("2_hnjh2")
+region = Rect2(812, 192, 116, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3nopi"]
+atlas = ExtResource("2_hnjh2")
+region = Rect2(928, 192, 116, 192)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m8pi6"]
 animations = [{
@@ -95,6 +112,28 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 4.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ad6r5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fnxya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tuybs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3nopi")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 7.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_twli2"]
@@ -103,12 +142,12 @@ radius = 71.44928
 [node name="CharacterBody2D" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(17, -3)
 scale = Vector2(0.6679687, 0.59375)
 sprite_frames = SubResource("SpriteFrames_m8pi6")
-animation = &"attack"
+animation = &"jump"
 autoplay = "idle"
-frame = 4
-frame_progress = 0.5313009
+frame_progress = 0.6184076
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false

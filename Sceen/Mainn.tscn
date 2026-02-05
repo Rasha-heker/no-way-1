@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cy4u6bny1cgxn"]
+[gd_scene load_steps=21 format=3 uid="uid://cy4u6bny1cgxn"]
 
 [ext_resource type="PackedScene" uid="uid://bu3lcrmm5cjd1" path="res://Sceen/Player.tscn" id="3_uk106"]
 [ext_resource type="Texture2D" uid="uid://bdy52o2vrkpk8" path="res://assets/tileset/Lantai (1).png" id="3_wgpgn"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cwikpd5nod1l0" path="res://Sceen/crystal.tscn" id="10_kooi2"]
 [ext_resource type="PackedScene" uid="uid://dsearpfqrwwhi" path="res://Sceen/killzone.tscn" id="11_ud1a7"]
 [ext_resource type="PackedScene" uid="uid://wjej2sp388xx" path="res://Sceen/suara(bisikan).tscn" id="12_nufx6"]
+[ext_resource type="PackedScene" uid="uid://du6i4l7q65h22" path="res://Sceen/kelinci_god.tscn" id="13_vneob"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r0du0"]
 texture = ExtResource("3_wgpgn")
@@ -445,3 +446,78 @@ position = Vector2(371, 182)
 
 [node name="crystal3" parent="." instance=ExtResource("10_kooi2")]
 position = Vector2(611, 163)
+
+[node name="crystal4" parent="." instance=ExtResource("10_kooi2")]
+position = Vector2(1010, 194)
+
+[node name="crystal5" parent="." instance=ExtResource("10_kooi2")]
+position = Vector2(1226, 143)
+
+[node name="crystal6" parent="." instance=ExtResource("10_kooi2")]
+position = Vector2(1447, 136)
+
+[node name="crystal7" parent="." instance=ExtResource("10_kooi2")]
+position = Vector2(1844, 170)
+
+[node name="crystal8" parent="." instance=ExtResource("10_kooi2")]
+position = Vector2(2147, 205)
+
+[node name="crystal9" parent="." instance=ExtResource("10_kooi2")]
+position = Vector2(2422, 210)
+
+[node name="crystal10" parent="." instance=ExtResource("10_kooi2")]
+position = Vector2(2727, 207)
+
+[node name="crystal11" parent="." instance=ExtResource("10_kooi2")]
+position = Vector2(2973, 191)
+
+[node name="crystal12" parent="." instance=ExtResource("10_kooi2")]
+position = Vector2(3162, 157)
+
+[node name="crystal13" parent="." instance=ExtResource("10_kooi2")]
+position = Vector2(3162, 157)
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 396.0
+offset_top = 101.0
+offset_right = 520.0
+offset_bottom = 134.0
+text = "You're worthy."
+
+[node name="TextEdit2" type="TextEdit" parent="."]
+offset_left = 868.0
+offset_top = 118.0
+offset_right = 1044.0
+offset_bottom = 151.0
+text = "I need you, Wammbi."
+
+[node name="TextEdit3" type="TextEdit" parent="."]
+offset_left = 1274.0
+offset_top = 72.0
+offset_right = 1467.0
+offset_bottom = 105.0
+text = "WE need you, Wammbi."
+
+[node name="TextEdit4" type="TextEdit" parent="."]
+offset_left = 1936.0
+offset_top = 99.0
+offset_right = 2092.0
+offset_bottom = 132.0
+text = "You are our savior."
+
+[node name="TextEdit5" type="TextEdit" parent="."]
+offset_left = 2538.0
+offset_top = 110.0
+offset_right = 2694.0
+offset_bottom = 143.0
+text = "SAVE THE WORLD."
+
+[node name="TextEdit6" type="TextEdit" parent="."]
+offset_left = 3178.0
+offset_top = 56.0
+offset_right = 3247.0
+offset_bottom = 89.0
+text = "KILL IT."
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("13_vneob")]
+position = Vector2(3541, 157)
