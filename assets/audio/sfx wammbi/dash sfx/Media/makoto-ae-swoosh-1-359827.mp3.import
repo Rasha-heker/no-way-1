@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cjhyxlk88pi61"
+path="res://.godot/imported/makoto-ae-swoosh-1-359827.mp3-f4bb7f2cca147c821d9ce3aae3899be7.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx wammbi/dash sfx/Media/makoto-ae-swoosh-1-359827.mp3"
+dest_files=["res://.godot/imported/makoto-ae-swoosh-1-359827.mp3-f4bb7f2cca147c821d9ce3aae3899be7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,7 +1,7 @@
 [gd_scene load_steps=43 format=3 uid="uid://cbir4vlp4sv7"]
 
 [ext_resource type="Texture2D" uid="uid://cclp8ay6cq1jf" path="res://assets/char/Enemy/Sword_spritesheet.png" id="1_jyqc2"]
-[ext_resource type="Script" path="res://Script/enemy_sword.gd" id="1_nyki3"]
+[ext_resource type="Script" uid="uid://ba8k6alx3r2ik" path="res://Script/enemy_sword.gd" id="1_nyki3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nyki3"]
 atlas = ExtResource("1_jyqc2")
@@ -287,17 +287,17 @@ animations = [{
 size = Vector2(10, 21)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kql5y"]
-radius = 139.0899
+radius = 81.09871
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_prkt5"]
 radius = 8.0
 height = 58.0
 
 [node name="Enemy Sword" type="CharacterBody2D" groups=["enemy"]]
-collision_layer = 2
 script = ExtResource("1_nyki3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.328125, 1.125)
 sprite_frames = SubResource("SpriteFrames_m3mpk")
 animation = &"walk"
 autoplay = "idle"

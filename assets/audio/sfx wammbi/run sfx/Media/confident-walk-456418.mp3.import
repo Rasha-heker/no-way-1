@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://hujhrgsmpua"
+path="res://.godot/imported/confident-walk-456418.mp3-5b32f7b91ba54137fa4edbc31b84a2ce.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx wammbi/run sfx/Media/confident-walk-456418.mp3"
+dest_files=["res://.godot/imported/confident-walk-456418.mp3-5b32f7b91ba54137fa4edbc31b84a2ce.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

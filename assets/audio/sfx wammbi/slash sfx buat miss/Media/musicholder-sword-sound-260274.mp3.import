@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://s2j0bplwhnd0"
+path="res://.godot/imported/musicholder-sword-sound-260274.mp3-74ab0731854c12115b01f6e5b421b6ad.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx wammbi/slash sfx buat miss/Media/musicholder-sword-sound-260274.mp3"
+dest_files=["res://.godot/imported/musicholder-sword-sound-260274.mp3-74ab0731854c12115b01f6e5b421b6ad.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

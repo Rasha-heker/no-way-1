@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=4 uid="uid://dipgyxv58tdea"]
 
-[ext_resource type="PackedScene" uid="uid://d1ht8dvobk057" path="res://Sceen/wammbi.tscn" id="1_2ehvv"]
+[ext_resource type="PackedScene" uid="uid://d1ht8dvobk057" path="res://Sceen/wammmbi.tscn" id="1_2ehvv"]
 [ext_resource type="Texture2D" uid="uid://c1jf0swmxq8vo" path="res://assets/Background/NightForest/Image without mist.png" id="2_dr61x"]
 [ext_resource type="Texture2D" uid="uid://dfnhhqb83ahyn" path="res://assets/Background/NightForest/Layers/2.png" id="3_ruewt"]
 [ext_resource type="Texture2D" uid="uid://co6k1cmwvydt1" path="res://assets/Background/NightForest/Layers/3.png" id="4_tmqw7"]

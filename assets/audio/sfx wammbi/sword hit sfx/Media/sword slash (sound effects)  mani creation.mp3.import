@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhf16m1lls55v"
+path="res://.godot/imported/sword slash (sound effects)  mani creation.mp3-503194c18de3b6fd6d1a40fd4db05d46.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx wammbi/sword hit sfx/Media/sword slash (sound effects)  mani creation.mp3"
+dest_files=["res://.godot/imported/sword slash (sound effects)  mani creation.mp3-503194c18de3b6fd6d1a40fd4db05d46.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
