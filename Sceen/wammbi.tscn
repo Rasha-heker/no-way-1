@@ -1,13 +1,14 @@
-[gd_scene load_steps=29 format=3 uid="uid://cns8cv4887mf1"]
+[gd_scene load_steps=30 format=3 uid="uid://cns8cv4887mf1"]
 
 [ext_resource type="Script" uid="uid://bucysexjqx2bn" path="res://Script/wammbi.gd" id="1_73l60"]
 [ext_resource type="Texture2D" uid="uid://rco251c4jg4p" path="res://assets/char/Wammbi/wammbi nyerang.png" id="2_xtdso"]
 [ext_resource type="Texture2D" uid="uid://6cl8emv28m1p" path="res://assets/char/Wammbi/wammbi lompat.png" id="4_fs6m0"]
 [ext_resource type="Texture2D" uid="uid://d3d1a2cfwjk42" path="res://assets/char/Wammbi/Wammbi hit.png" id="5_esx2d"]
 [ext_resource type="Texture2D" uid="uid://7cnbfb30s65s" path="res://assets/char/Wammbi/wammbi diam.png" id="5_fs6m0"]
-[ext_resource type="AudioStream" uid="uid://dfj5dxk4rra2y" path="res://assets/audio/boing-bounce-sound-effect-427577.mp3" id="7_esx2d"]
+[ext_resource type="AudioStream" uid="uid://u4p50k7gx8x6" path="res://assets/audio/soundreality-whoosh-gaming-jump-243507.mp3" id="7_esx2d"]
 [ext_resource type="Texture2D" uid="uid://d4m5e0q2akix6" path="res://assets/char/Wammbi/wammbi jalan.png" id="7_ldobo"]
-[ext_resource type="AudioStream" uid="uid://coh45o5m4lnow" path="res://assets/audio/confident-walk-456418.mp3" id="8_ldobo"]
+[ext_resource type="AudioStream" uid="uid://dkhg006xrhuri" path="res://assets/audio/u_3x9ga8wevj-walking-sound-effect-272246.mp3" id="8_esx2d"]
+[ext_resource type="AudioStream" uid="uid://08516bnth3dc" path="res://assets/audio/oxidvideos-sword-swing-sfx-407574.mp3" id="9_esx2d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mvuk8"]
 atlas = ExtResource("2_xtdso")
@@ -162,25 +163,25 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ye16i"]
-size = Vector2(5, 19)
+size = Vector2(5, 22.5)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dd465"]
 radius = 10.565662
-height = 44.0
+height = 66.0
 
 [node name="Wammbi (AJ)" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_73l60")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1, 1)
-scale = Vector2(0.5625, 0.5625)
+scale = Vector2(0.79687506, 0.79687506)
 sprite_frames = SubResource("SpriteFrames_skrk8")
-animation = &"fall"
+animation = &"attack"
 autoplay = "idle"
-frame_progress = 0.64466196
+frame = 4
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2, 2)
+position = Vector2(-1, 3)
 shape = SubResource("RectangleShape2D_ye16i")
 
 [node name="AttackArea" type="Area2D" parent="."]
@@ -201,9 +202,10 @@ zoom = Vector2(4.5, 4.5)
 stream = ExtResource("7_esx2d")
 
 [node name="sfx_jalan" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("8_ldobo")
+stream = ExtResource("8_esx2d")
 
 [node name="sfx_serang" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_esx2d")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]

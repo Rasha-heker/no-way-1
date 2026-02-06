@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://wjej2sp388xx"]
 
 [ext_resource type="Script" uid="uid://ckgj4li3qevbm" path="res://Script/suara(bisikan).gd" id="1_gglfi"]
-[ext_resource type="AudioStream" uid="uid://coh45o5m4lnow" path="res://assets/audio/confident-walk-456418.mp3" id="2_gglfi"]
+[ext_resource type="AudioStream" uid="uid://bqh1qnaxxi8c3" path="res://assets/audio/freesound_community-four_voices_whispering-6943.mp3" id="2_gglfi"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kpowy"]
 animations = [{

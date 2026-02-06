@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://beud7tmpwh6k5"
+path="res://.godot/imported/Furry Friends - Purple Planet Music  Cute Background Music.mp3-b9c5e546c506158f420a3f2b8a2224f5.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/Furry Friends - Purple Planet Music  Cute Background Music.mp3"
+dest_files=["res://.godot/imported/Furry Friends - Purple Planet Music  Cute Background Music.mp3-b9c5e546c506158f420a3f2b8a2224f5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://cwikpd5nod1l0"]
+[gd_scene load_steps=9 format=3 uid="uid://cwikpd5nod1l0"]
 
 [ext_resource type="Script" uid="uid://bp56nnjgmpgie" path="res://Script/crystal.gd" id="1_c8x7k"]
 [ext_resource type="Texture2D" uid="uid://tiqxl45o7ccm" path="res://assets/items/red_crystal_0000.png" id="1_nmoc2"]
 [ext_resource type="Texture2D" uid="uid://ik88cuoa2jeu" path="res://assets/items/red_crystal_0001.png" id="2_c8x7k"]
 [ext_resource type="Texture2D" uid="uid://c2x8f5ya46b6t" path="res://assets/items/red_crystal_0002.png" id="3_oe4af"]
 [ext_resource type="Texture2D" uid="uid://8242yj523lwk" path="res://assets/items/red_crystal_0003.png" id="4_uecgm"]
+[ext_resource type="AudioStream" uid="uid://c8chkdvj5n5do" path="res://assets/audio/Retro Instrument - crystal - C02.wav" id="6_0uabr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kpowy"]
 animations = [{
@@ -31,7 +32,6 @@ radius = 5.0
 height = 20.0
 
 [node name="crystal" type="Area2D"]
-collision_mask = 2
 script = ExtResource("1_c8x7k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -45,5 +45,9 @@ frame_progress = 0.046486825
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -15)
 shape = SubResource("CapsuleShape2D_x82c1")
+
+[node name="sfx_ambil" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_0uabr")
+volume_db = 3.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

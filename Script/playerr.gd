@@ -7,6 +7,7 @@ const LIAT_ARAH = 60.0
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var cam: Camera2D = $Camera2D
 @onready var sfx_lompat: AudioStreamPlayer2D = $sfx_lompat
+@onready var sfx_jalan: AudioStreamPlayer2D = $sfx_jalan
 
 func _physics_process(delta):
 	#garpitasi

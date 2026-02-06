@@ -6,6 +6,7 @@ class_name character_body_2d extends CharacterBody2D
 @onready var cam: Camera2D = $Camera2D
 @onready var sfx_lompat: AudioStreamPlayer2D = $sfx_lompat
 @onready var sfx_jalan: AudioStreamPlayer2D = $sfx_jalan
+@onready var sfx_serang: AudioStreamPlayer2D = $sfx_serang
 
 const LIAT_ARAH = 60
 @export var LAJU = 130
@@ -42,6 +43,7 @@ func _physics_process(delta):
 	# ATTACK
 	if Input.is_action_just_pressed("attack") and not is_attacking and not is_hurt:
 		attack()
+		sfx_serang.play()
 
 	# === ANIMASI (SATU PINTU) ===
 	if is_hurt:
