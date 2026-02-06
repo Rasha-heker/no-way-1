@@ -1,12 +1,21 @@
-class_name Wammbi extends CharacterBody2D
+class_name wammbi extends CharacterBody2D
 
 const LAJU = 130.0
 const JUMP_VELOCUTY = -300.0
 const LIAT_ARAH = 60.0
 
+@export var max_hp := 5
+var hp := 0
+var is_hurt := false
+
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var cam: Camera2D = $Camera2D
 @onready var sfx_lompat: AudioStreamPlayer2D = $sfx_lompat
+
+func _ready():
+	hp = max_hp
+
+var is_attacking := false
 
 func _physics_process(delta):
 	#garpitasi
@@ -14,6 +23,9 @@ func _physics_process(delta):
 		velocity += get_gravity() * delta
 
 	var direction := Input.get_axis("ui_left", "ui_right")
+	
+	if Input.is_action_just_pressed("attack") and not is_attacking:
+		attack()
 	
 	# Lompat
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
@@ -28,6 +40,7 @@ func _physics_process(delta):
 		cam.offset.x = lerp(cam.offset.x, LIAT_ARAH * direction, 0.1)
 	else:
 		velocity.x = 0
+		
 		
 	#PERANIMASIAN AH
 	if not is_on_floor():
