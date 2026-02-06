@@ -6,7 +6,7 @@ extends CharacterBody2D
 
 @export var SPEED = 130
 @export var JUMP_VELOCITY = -350
-@export var max_hp := 5
+@export var max_hp := 100
 var hp := 0
 var is_hurt := false
 

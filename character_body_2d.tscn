@@ -148,24 +148,24 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ye16i"]
-size = Vector2(5, 19)
+size = Vector2(6.5, 18.5)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dd465"]
 radius = 10.565662
-height = 33.247887
+height = 38.360336
 
 [node name="Wammbi (AJ)" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_dd465")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1, 1)
-scale = Vector2(0.5625, 0.5625)
+position = Vector2(-4.7683716e-07, 9.536743e-07)
+scale = Vector2(0.6796875, 0.65625006)
 sprite_frames = SubResource("SpriteFrames_skrk8")
-animation = &"walk"
+animation = &"attack"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2, 2)
+position = Vector2(-1.25, 1.75)
 shape = SubResource("RectangleShape2D_ye16i")
 
 [node name="AttackArea" type="Area2D" parent="."]

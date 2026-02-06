@@ -285,37 +285,40 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ijb6r"]
-size = Vector2(10, 21)
+size = Vector2(11, 20.5)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kql5y"]
-radius = 139.0899
+radius = 106.01887
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_prkt5"]
 radius = 8.0
-height = 58.0
+height = 68.0
 
 [node name="Enemy Sword" type="CharacterBody2D" groups=["enemy"]]
-collision_layer = 2
 script = ExtResource("1_prkt5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, -13)
+scale = Vector2(1.59375, 1.40625)
 sprite_frames = SubResource("SpriteFrames_m3mpk")
 animation = &"attack"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 5.5)
+position = Vector2(2.5, -5.75)
 shape = SubResource("RectangleShape2D_ijb6r")
 
 [node name="DetectionArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+position = Vector2(5, -8)
 shape = SubResource("CircleShape2D_kql5y")
 
 [node name="AttackArea" type="Area2D" parent="."]
+position = Vector2(-10, 14)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
-position = Vector2(0, 8)
+position = Vector2(12, -20)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_prkt5")
 
@@ -328,6 +331,7 @@ wait_time = 0.5
 one_shot = true
 
 [node name="HitSound" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(2, -5)
 stream = ExtResource("3_ijb6r")
 max_distance = 300.0
 
