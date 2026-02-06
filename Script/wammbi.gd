@@ -1,4 +1,4 @@
-class_name Player extends CharacterBody2D
+class_name Wammbi extends CharacterBody2D
 
 const LAJU = 130.0
 const JUMP_VELOCUTY = -300.0
@@ -18,7 +18,7 @@ func _physics_process(delta):
 	# Lompat
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocity.y = JUMP_VELOCUTY
-		sprite.play("lompat")
+		sprite.play("jump")
 		sfx_lompat.play()
 
 	#jalan
@@ -32,18 +32,15 @@ func _physics_process(delta):
 	#PERANIMASIAN AH
 	if not is_on_floor():
 		if velocity.y < 0:
-			if sprite.animation != "lompat":
-				sprite.play("lompat") # saat lompat
-		else:
-			if sprite.animation != "diudara":
-				sprite.play("diudara") # saat jatuh
+			if sprite.animation != "jump":
+				sprite.play("jump") # saat lompat
 	else:
 		if direction != 0:
-			if sprite.animation != "jalan":
-				sprite.play("jalan") #animasi jalan
+			if sprite.animation != "walk":
+				sprite.play("walk") #animasi jalan
 		else:
-			if sprite.animation != "diam":
-				sprite.play("diam") #animasi diammmm
+			if sprite.animation != "idle":
+				sprite.play("idle") #animasi diammmm
 
 	move_and_slide()
 	

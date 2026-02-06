@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=4 uid="uid://bwc6newemkvss"]
+[gd_scene load_steps=6 format=4 uid="uid://bwc6newemkvss"]
 
+[ext_resource type="Script" uid="uid://dun4ud7rmr1pb" path="res://Script/dunia_dua.gd" id="1_7tig6"]
 [ext_resource type="Texture2D" uid="uid://dvuwausxifluc" path="res://assets/tileset/tileset.png" id="1_frgo4"]
 [ext_resource type="PackedScene" uid="uid://d1ht8dvobk057" path="res://Sceen/wammbi.tscn" id="2_uo6rr"]
 
@@ -187,6 +188,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_1ghj1")
 
 [node name="Dunia Dua" type="Node2D"]
+script = ExtResource("1_7tig6")
 
 [node name="TileMap" type="TileMap" parent="."]
 format = 2
