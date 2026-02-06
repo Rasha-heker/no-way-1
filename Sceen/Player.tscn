@@ -150,7 +150,7 @@ rotation_smoothing_enabled = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_0pi4m")
-animation = &"lompat"
+animation = &"diam"
 autoplay = "diam"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["player"]]

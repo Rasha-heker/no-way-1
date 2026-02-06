@@ -1,6 +1,6 @@
 [gd_scene load_steps=30 format=3 uid="uid://cns8cv4887mf1"]
 
-[ext_resource type="Script" uid="uid://bucysexjqx2bn" path="res://Script/wammbi.gd" id="1_73l60"]
+[ext_resource type="Script" uid="uid://c63mlei2fjujd" path="res://Script/wammbi.gd" id="1_73l60"]
 [ext_resource type="Texture2D" uid="uid://rco251c4jg4p" path="res://assets/char/Wammbi/wammbi nyerang.png" id="2_xtdso"]
 [ext_resource type="Texture2D" uid="uid://6cl8emv28m1p" path="res://assets/char/Wammbi/wammbi lompat.png" id="4_fs6m0"]
 [ext_resource type="Texture2D" uid="uid://d3d1a2cfwjk42" path="res://assets/char/Wammbi/Wammbi hit.png" id="5_esx2d"]
